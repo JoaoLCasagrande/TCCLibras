@@ -1,0 +1,7 @@
+{
+  "name": "TCCLibras",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
