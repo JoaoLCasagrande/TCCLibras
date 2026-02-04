@@ -10,4 +10,8 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
+  {
+    path: 'ocorrencias-samu',
+    loadComponent: () => import('./ocorrencias-samu/ocorrencias-samu.page').then( m => m.OcorrenciasSamuPage)
+  },
 ];
