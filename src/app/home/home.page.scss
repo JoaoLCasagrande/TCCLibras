@@ -1,15 +1,121 @@
 .fundofoto {
   --background: none;
   background: url('/assets/imgs/fundo.png') no-repeat center center / cover;
-  opacity: 20%;
 }
 
-ion-title{
+.servico{
+  h2{
+    color: #000;
+    font-weight: bold;
+  }
+}
+
+.servico-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  color: #000;
-  font-family: monospace;
-  font-size: 22px;
+
+  padding: 20px;
+
+  color: white;
+}
+.servico-icon {
+  width: 80px;
+  height: 80px;
+
+  margin-bottom: 12px;
+}
+
+.servicos-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 16px;
+
+  padding: 16px;
+
+  justify-items: center;
+}
+
+ion-card.servico {
+  width: 100%;
+
+  max-width: 160px; /* controla tamanho */
+
+  aspect-ratio: 1 / 1;
+
+  margin: 0;
+
+  border-radius: 14px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+ion-card.central {
+  grid-column: 1 / span 2;
+  justify-self: center;
+}
+
+ion-card.botaoLigar {
+  grid-column: 1 / span 2;
+  justify-self: center;
+}
+
+ion-card.botaoLigar {
+  --background: linear-gradient(135deg, #ff0000, #b00000);
+
+  background: linear-gradient(135deg, #ff0000, #b00000);
+
+  border-radius: 18px;
+
+  margin: 20px auto;
+
+  width: 90%;
+  max-width: 320px;
+
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.6);
+
+  grid-column: 1 / span 2;
+}
+
+.botao-content {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  color: white;
+
+  text-align: center;
+}
+
+.botao-topo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icone-alerta {
+  font-size: 26px;
+  color: white;
+}
+
+.texto-principal {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.texto-sub {
+  margin-top: 6px;
+
+  font-size: 13px;
+
+  opacity: 0.85;
 }
